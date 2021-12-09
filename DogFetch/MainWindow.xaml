@@ -1,0 +1,20 @@
+﻿<Window x:Class="DogFetch.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DogFetch"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#FFF4F4F5">
+    <Grid>
+        <TextBox x:Name="SearchBox" HorizontalAlignment="Left" Height="21" Margin="624,9,0,0" TextWrapping="Wrap" Text="All Dog Breeds" VerticalAlignment="Top" Width="94" BorderBrush="#FFF4F4F5" FontWeight="Bold" Background="#FFF4F4F5" IsReadOnly="True"/>
+        <ListBox x:Name="BreedListBox" HorizontalAlignment="Left" Height="353" Margin="581,30,0,0" VerticalAlignment="Top" Width="164" SelectionChanged="BreedListBox_SelectionChanged" />
+        <ComboBox x:Name="BreedSearchBox" HorizontalAlignment="Left" Margin="56,113,0,0" VerticalAlignment="Top" Width="156" Height="23" SelectionChanged="BreedSearchBox_SelectionChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="97,90,0,0" TextWrapping="Wrap" Text="Find a breed" VerticalAlignment="Top" Width="82" FontWeight="Bold" BorderBrush="#FFF4F4F5" Background="#FFF4F4F5" IsReadOnly="True"/>
+        <Button x:Name="SortButton" Content="Sort A/Z" HorizontalAlignment="Left" Margin="640,388,0,0" VerticalAlignment="Top" Width="48" Click="SortBreedList" FontWeight="Bold" FontSize="10" Height="21" Background="#FF6A95D3"/>
+        <Image x:Name="DogImage" HorizontalAlignment="Left" Height="198" Margin="275,132,0,0" VerticalAlignment="Top" Width="241"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="97,168,0,0" TextWrapping="Wrap" Text="Sub-breeds" VerticalAlignment="Top" Width="76" BorderBrush="#FFF4F4F5" FontWeight="Bold" Background="#FFF4F4F5" IsReadOnly="True"/>
+        <ListBox x:Name="SubBreedBox" HorizontalAlignment="Left" Height="148" Margin="68,190,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="SubBreedBox_SelectionChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="374,97,0,0" TextWrapping="Wrap" Text="Image" VerticalAlignment="Top" Width="49" BorderBrush="#FFF4F4F5" FontWeight="Bold" Background="#FFF4F4F5" IsReadOnly="True" FontSize="14"/>
+    </Grid>
+</Window>
